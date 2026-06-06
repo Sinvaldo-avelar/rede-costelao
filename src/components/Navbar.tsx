@@ -8,16 +8,18 @@ export default function Navbar() {
   // Controla a abertura da gaveta lateral
   const [showSidebar, setShowSidebar] = useState(false);
 
-  // Links da sua Área Externa Privada
+  // Links da sua Área Externa Privada e Páginas
   const links = [
+    { nome: '🍽️ Churrascaria', url: '/churrascaria' },
     { nome: '🛒 LojaS', url: 'https://controle-logistica-v2.vercel.app/loja' },
     { nome: '📦 Estoque', url: 'https://controle-logistica-v2.vercel.app/login' },
     { nome: '💼 Administrativo', url: 'https://controle-logistica-v2.vercel.app/administrativo' },
+    { nome: '💼 Admin', url: '/admin' },
   ];
 
   return (
     <>
-      {/* Barra Superior Principal */}
+      {/* Barra Superior Principal - Apenas para ativação da gaveta */}
       <nav className="w-full bg-zinc-950 border-b border-zinc-900 sticky top-0 z-40 shadow-md select-none">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between">
           

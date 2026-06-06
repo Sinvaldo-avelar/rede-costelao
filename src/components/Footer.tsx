@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Footer() {
   const anoAtual = new Date().getFullYear();
 
@@ -47,8 +48,10 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        
 
       </div>
+      
 
       {/* Linha de Direitos Autorais */}
       <div className="max-w-7xl mx-auto px-4 mt-4 pt-2 border-t border-zinc-900 text-center text-[10px] text-zinc-600">
